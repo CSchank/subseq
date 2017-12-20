@@ -28,7 +28,7 @@
 
 #define offset(seq, i) (void *)((char *)seq + i * el_size)
 
-void *locate_subseq(void *seq, void *subseq, size_t el_size, unsigned int seq_len, unsigned int subseq_len, int (*compare)(void *, void *)){
+void *locate_subseq(void *seq, void *subseq, size_t el_size, unsigned int seq_len, unsigned int subseq_len, int (*compare)(const void *, const void *)){
 	char *ss = subseq;
 	for(int i = 0; i < seq_len; i++){
 		int j = 0;

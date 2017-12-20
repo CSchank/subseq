@@ -23,4 +23,4 @@
  * APPLICATION THEREOF
  */
 
-void *locate_subseq(void *seq, void *subseq, size_t el_size, unsigned int seq_len, unsigned int subseq_len, int (*compare)(void *, void *));
+void *locate_subseq(void *seq, void *subseq, size_t el_size, unsigned int seq_len, unsigned int subseq_len, int (*compare)(const void *, const void *));

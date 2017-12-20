@@ -29,7 +29,7 @@
 #include <string.h>
 #include "subseq.h"
 
-int compare_char(void *ch1, void *ch2){
+int compare_char(const void *ch1, const void *ch2){
 	return *((char *)ch1) == *((char *)ch2);
 }
 

@@ -28,7 +28,7 @@
 #include <string.h>
 #include "subseq.h"
 
-int compare_int(void *int1, void *int2){
+int compare_int(const void *int1, const void *int2){
 	return *((int *)int1) == *((int *)int2);
 }
 
