@@ -36,7 +36,7 @@ int main(){
 	int seq[] = {40, 34, 7, 4, 9, 3, 6, 8, 8, 3, 6, 8, 2, 5, 8, 88, 90};
 	int subseq[] = {6, 8, 8, 3};
 
-	int *subs = locate_subseq(seq, subseq, sizeof(int), 16, 4, compare_int);
+	int *subs = locate_subseq(seq, subseq, sizeof(int), sizeof(seq) / sizeof(int), sizeof(subseq) / sizeof(int), compare_int);
 
 	if (subs)
 		printf("Subsequence found at position %ld in sequence.\n", subs - seq);
